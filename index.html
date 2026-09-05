@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cards Design</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+        }
+
+
+        /* =========================
+           OLD SOCIAL MEDIA CARDS
+           ========================= */
+
+        .social-title {
+            background-color: #d9006c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .social-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            padding: 50px 20px;
+            background-color: white;
+            flex-wrap: wrap;
+        }
+
+        .social-card {
+            width: 190px;
+            height: 270px;
+            border: 1px solid black;
+            text-align: center;
+            padding: 0 10px;
+            background-color: white;
+        }
+
+        .instagram {
+            background-color: #e52b6b;
+            color: white;
+            border: none;
+        }
+
+        .social-icon {
+            font-size: 40px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .social-card h2 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .social-card p {
+            font-size: 12px;
+            line-height: 18px;
+            margin: 0 8px 15px;
+        }
+
+        .social-button {
+            display: block;
+            width: 165px;
+            height: 32px;
+            line-height: 32px;
+            margin: auto;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            font-size: 11px;
+        }
+
+        .instagram .social-button {
+            background-color: white;
+            color: #e52b6b;
+        }
+
+
+        /* =========================
+           NEW RESPONSIVE CARDS
+           ========================= */
+
+        .responsive-title {
+            background-color: #d9006c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 305px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px #cccccc;
+        }
+
+        .card img {
+            width: 100%;
+            height: 205px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .content {
+            padding: 15px;
+        }
+
+        .content h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 14px;
+            line-height: 19px;
+            color: #555555;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #333333;
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background-color: #d9006c;
+        }
+
+
+        /* =========================
+           BOTTOM
+           ========================= */
+
+        .bottom {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+           ========================= */
+
+        @media (max-width: 700px) {
+
+            .social-title {
+                font-size: 25px;
+            }
+
+            .responsive-title {
+                font-size: 28px;
+            }
+
+            .social-container {
+                flex-direction: column;
+            }
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+                max-width: 305px;
+            }
+
+            .bottom {
+                font-size: 30px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- ==================================
+         OLD CODE - SOCIAL MEDIA CARDS
+         ================================== -->
+
+    <div class="social-title">
+        SOCIAL MEDIA CARDS
+    </div>
+
+    <div class="social-container">
+
+        <!-- Twitter -->
+        <div class="social-card">
+
+            <div class="social-icon">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+
+            <h2>TWITTER</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+                Expedita ullam aliquid non
+                eligendi, nemo est neque
+                reiciendis error?
+            </p>
+
+            <a href="#" class="social-button">
+                READ MORE
+            </a>
+
+        </div>
+
+
+        <!-- Instagram -->
+        <div class="social-card instagram">
+
+            <div class="social-icon">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+            <h2>INSTAGRAM</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+                Expedita ullam aliquid non
+                eligendi, nemo est neque
+                reiciendis error?
+            </p>
+
+            <a href="#" class="social-button">
+                READ MORE
+            </a>
+
+        </div>
+
+
+        <!-- YouTube -->
+        <div class="social-card">
+
+            <div class="social-icon">
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+
+            <h2>YOUTUBE</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+                Expedita ullam aliquid non
+                eligendi, nemo est neque
+                reiciendis error?
+            </p>
+
+            <a href="#" class="social-button">
+                READ MORE
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================================
+         NEW CODE - RESPONSIVE CARDS
+         ================================== -->
+
+    <div class="responsive-title">
+        RESPONSIVE CARD DESIGN
+    </div>
+
+    <div class="cards">
+
+        <!-- Card 1 -->
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80">
+
+            <div class="content">
+
+                <h2>Card 1</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit,
+                    sed do eiusmod tempor
+                    incididunt ut labore et
+                    dolore magna aliqua.
+                </p>
+
+                <a href="#" class="btn">
+                    Read More
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=600&q=80">
+
+            <div class="content">
+
+                <h2>Card 2</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit,
+                    sed do eiusmod tempor
+                    incididunt ut labore et
+                    dolore magna aliqua.
+                </p>
+
+                <a href="#" class="btn">
+                    Read More
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80">
+
+            <div class="content">
+
+                <h2>Card 3</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit,
+                    sed do eiusmod tempor
+                    incididunt ut labore et
+                    dolore magna aliqua.
+                </p>
+
+                <a href="#" class="btn">
+                    Read More
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bottom -->
+    <div class="bottom">
+        Using Flexbox
+    </div>
+
+
+</body>
+</html>
